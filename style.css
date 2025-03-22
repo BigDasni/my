@@ -1,0 +1,59 @@
+/* Reset & 基本樣式 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* 頁首區塊 */
+header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 60px 20px;
+}
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* 主要內容 */
+main {
+  padding: 40px 20px;
+}
+main p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+/* 外部連結按鈕 */
+.links {
+  margin-top: 20px;
+}
+.links a {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 10px 16px;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+.links a:hover {
+  background-color: #5a67d8;
+  opacity: 0.9;
+}
