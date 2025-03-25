@@ -40,20 +40,30 @@ main p {
 
 /* 外部連結按鈕 */
 .links {
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 兩欄 */
+  gap: 20px;
+  justify-content: center;
+  max-width: 600px;
+  margin: 40px auto 0;
 }
+
 .links a {
-  display: inline-block;
-  margin: 10px 15px;
-  padding: 10px 16px;
-  background-color: #667eea;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #111;        /* 黑色底 */
+  color: white;                  /* 白色字 */
+  font-size: 1.2em;
   text-decoration: none;
-  font-weight: 500;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .links a:hover {
-  background-color: #5a67d8;
-  opacity: 0.9;
+  background-color: #333;
+  transform: translateY(-2px);
 }
+
